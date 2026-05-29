@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+credentials/
+*.json
+!vercel.json
+!.env.example
+.vercel/
