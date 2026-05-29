@@ -32,7 +32,7 @@ async def cron_mail_pipeline(
     _verify_cron_secret(authorization)
 
     logger.info("Vercel Cron: mail_pipeline 開始")
-    result = run_mail_pipeline(max_results=5)
+    result = run_mail_pipeline(max_results=5, ignore_send_hour=True)
     logger.info(
         "Vercel Cron: mail_pipeline 完了 sent=%d failed=%d",
         result.total_sent,

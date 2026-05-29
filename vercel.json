@@ -15,7 +15,7 @@
   "crons": [
     {
       "path": "/api/v1/cron/mail-pipeline",
-      "schedule": "0 * * * *"
+      "schedule": "0 0 * * *"
     }
   ]
 }
